@@ -2,14 +2,18 @@ import type { ReactNode } from 'react';
 
 type ButtonProps = {
   children: ReactNode;
-  color: string;
+  color?: string;
   onClick: () => void;
 };
 
-export default function Button({ children, onClick, color }: ButtonProps) {
+export default function Button({
+  children,
+  onClick,
+  color = 'primary',
+}: ButtonProps) {
   return (
     <button
-      type="button"
+      type='button'
       className={`btn btn-${color}`}
       onClick={onClick}
       color={color}

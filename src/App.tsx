@@ -13,9 +13,7 @@ function App() {
       <Alert>
         Hello <span>World</span>
       </Alert>
-      <Button color='primary' onClick={() => console.log('Clicked')}>
-        BOUTON !
-      </Button>
+      <Button onClick={() => console.log('Clicked')}>BOUTON !</Button>
       {/* <ListGroup
         items={items}
         heading="Cities"
