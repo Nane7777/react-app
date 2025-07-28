@@ -6,11 +6,7 @@ type ButtonProps = {
   onClick: () => void;
 };
 
-export default function Button({
-  children,
-  onClick,
-  color = 'primary',
-}: ButtonProps) {
+export default function Button({ children, onClick, color }: ButtonProps) {
   return (
     <button
       type='button'
